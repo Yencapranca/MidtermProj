@@ -1,0 +1,1019 @@
+{%  extends 'hris/base.html' %}
+{% load static %}
+{% block content%}
+<html>
+	<style>
+		.table-data td{
+			text-align: center;
+		}
+		
+		.signature{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		</style>
+<head>
+	<title</title>
+</head>
+
+<div style="border: 1px solid black; padding: 0.25in; width: 8.5in; height: min-content; margin: 15px;">
+<table style="border: 1px solid black; border-collapse: collapse; font-family: Arial, Helvetica, sans-serif; width: 8in; table-layout: fixed;">
+	<tr>
+        <td colspan="18" style="height: 0.2in; font-size: 72.5%; background-color:gray; color: white;">
+			<b><i>IV. CIVIL SERVICE ELIGIBILITY</i></b>
+		</td>
+    </tr>
+	
+	<tr>
+		<td colspan="1" rowspan="2" style="height: 0.3in; font-size: 62.5%; background-color:lightgray; border: 1px 1px 1px 0px solid black;">
+			27.
+		</td>
+		<td colspan="5" rowspan="2" style="height: 0.3in; font-size: 52.5%; background-color:lightgray; border: 1px 0px 1px 1px solid black; text-align: center;">
+			CAREER SERVICE/ RA 1080 (BOARD/ BAR) UNDER<br>
+			SPECIAL LAWS/ CES/ CSEE<br>
+			BARANGAY ELIGIBILITY / DRIVER'S LICENSE
+		</td>
+		<td colspan="2" rowspan="2" style="height: 0.3in; font-size: 62.5%; background-color:lightgray; border: 1px solid black; text-align: center;">
+			RATING<br>
+			(If Applicable)
+		</td>
+		<td colspan="2" rowspan="2" style="height: 0.3in; font-size: 62.5%; background-color:lightgray; border: 1px solid black; text-align: center;">
+			DATE OF<br>
+			EXAMINATION /<br>
+			CONFERMENT
+		</td>
+		<td colspan="5" rowspan="2" style="height: 0.3in; font-size: 62.5%; background-color:lightgray; border: 1px solid black; text-align: center;">
+			PLACE OF EXAMINATION / CONFERMENT
+		</td>
+		<td colspan="3" style="height: 0.1in; font-size: 55%; background-color:lightgray; border: 1px solid black; text-align: center;">
+			LICENSE (if applicable)
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2" style="height: 0.2in; font-size: 62.5%; background-color:lightgray; border: 1px solid black; text-align: center;">
+			NUMBER
+		</td>	
+		<td colspan="1" style="height: 0.2in; font-size: 62.5%; background-color:lightgray; border: 1px solid black; text-align: center;">
+			Date of<br>
+			Validity
+		</td>			
+	</tr>
+	
+	<tr class="table-data">
+		<td colspan="6" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.career_service1 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.rating_cs1 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.date_of_exam1 }}
+		</td>
+		<td colspan="5" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.place_of_exam1 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.license_number1 }}
+		</td>
+		<td colspan="1" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.date_of_validity1 }}
+		</td>
+	</tr>
+	<tr class="table-data">
+		<td colspan="6" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.career_service2 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.rating_cs2 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.date_of_exam2 }}
+		</td>
+		<td colspan="5" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.place_of_exam2 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.license_number2 }}
+		</td>
+		<td colspan="1" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.date_of_validity2 }}
+		</td>
+	</tr>
+	<tr class="table-data">
+		<td colspan="6" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.career_service3 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.rating_cs3 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.date_of_exam3 }}
+		</td>
+		<td colspan="5" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.place_of_exam3 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.license_number3 }}
+		</td>
+		<td colspan="1" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.date_of_validity3 }}
+		</td>
+	</tr>
+	<tr class="table-data">
+		<td colspan="6" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.career_service4 }} 
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.rating_cs4 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.date_of_exam4 }}
+		</td>
+		<td colspan="5" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.place_of_exam4 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.license_number4 }}
+		</td>
+		<td colspan="1" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.date_of_validity4 }}
+		</td>
+	</tr>
+	<tr class="table-data">
+		<td colspan="6" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.career_service5 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.rating_cs5 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.date_of_exam5 }}
+		</td>
+		<td colspan="5" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.place_of_exam5 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.license_number5 }}
+		</td>
+		<td colspan="1" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.date_of_validity5 }}
+		</td>
+	</tr>
+	<tr class="table-data">
+		<td colspan="6" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.career_service6 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.rating_cs6 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.date_of_exam6 }}
+		</td>
+		<td colspan="5" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.place_of_exam6 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.license_number6 }}
+		</td>
+		<td colspan="1" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.date_of_validity6 }}
+		</td>
+	</tr>
+	<tr class="table-data">
+		<td colspan="6" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.career_service7 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.rating_cs7 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.date_of_exam7 }}
+		</td>
+		<td colspan="5" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.place_of_exam7 }}
+		</td>
+		<td colspan="2" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.license_number7 }}
+		</td>
+		<td colspan="1" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.date_of_validity7 }}
+		</td>
+	</tr>
+	<tr>
+        <td colspan="18" style="height: 0.1in; font-size: 55%; background-color:lightgray; color:red; border: 1px solid black; text-align: center;">
+			<b><i>(Continue on separate sheet if necessary)</i></b>
+		</td>
+    </tr>
+	<tr>
+        <td colspan="18" style="height: 0.55in; font-size: 70%; background-color:gray; color: white;">
+			<b><i>
+			V. WORK EXPERIENCE<br>
+			(Include private employment.  Start from your recent work) Description of duties should be indicated in the attached Work Experience sheet.
+			</i></b>
+		</td>
+    </tr>
+	<tr>
+		<td colspan="1" rowspan="2" style="height: 0.3in; font-size: 62.5%; background-color:lightgray; border: 1px 1px 1px 0px solid black;">
+			28.
+		</td>
+		<td colspan="3" rowspan="2" style="height: 0.3in; font-size: 62.5%; background-color:lightgray; border: 1px 0px 1px 1px solid black; text-align: center;">
+			INCLUSIVE DATES<br>
+			(mm/dd/yyyy)
+		</td>
+		<td colspan="4" rowspan="3" style="height: 0.3in; font-size: 62.5%; background-color:lightgray; border: 1px solid black; text-align: center;">
+			POSITION TITLE<br>
+			(Write in full/Do not abbreviate)
+		</td>
+		<td colspan="4" rowspan="3" style="height: 0.3in; font-size: 62.5%; background-color:lightgray; border: 1px solid black; text-align: center;">
+			DEPARTMENT / AGENCY / OFFICE / COMPANY <br>
+			(Write in full/Do not abbreviate)
+		</td>
+		<td colspan="1" rowspan="3" style="height: 0.3in; font-size: 52.5%; background-color:lightgray; border: 1px solid black; text-align: center;">
+			MONTHLY<br>
+			SALARY
+		</td>
+		<td colspan="2" rowspan="3" style="height: 0.3in; font-size: 50%; background-color:lightgray; border: 1px solid black; text-align: center;">
+			SALARY/ JOB/<br>
+			PAY GRADE (if<br>
+			applicable)&<br>
+			STEP  (Format<br>
+			"00-0")/<br>
+			INCREMENT
+		</td>
+		<td colspan="2" rowspan="3" style="height: 0.3in; font-size: 62.5%; background-color:lightgray; border: 1px solid black; text-align: center;">
+			STATUS OF<br>
+			APPOINTMENT
+		</td>
+		<td colspan="1" rowspan="3" style="height: 0.3in; font-size: 55%; background-color:lightgray; border: 1px solid black; text-align: center;">
+			GOV'T<br>
+			SERVICE<br>
+			(Y/N)
+		</td>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; background-color:lightgray; border: 1px solid black; text-align: center;">
+			From
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; background-color:lightgray; border: 1px solid black; text-align: center;">
+			To
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from1 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to1 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title1 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c1 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary1 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade1 }} {{ employee.step1 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment1 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service1 }}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from2 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to2 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title2 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c2 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary2 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade2 }} {{ employee.step2 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment2 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service2 }}
+		</td>
+	</tr>
+		<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from3 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to3 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title3 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c3 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary3 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade3 }} {{ employee.step3 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment3 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service3 }}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from4 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to4 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title4 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c4 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary4 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade4 }} {{ employee.step4 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment4 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service4 }}
+		</td>
+	</tr>	
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from5 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to5 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title5 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c5 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary5 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade5 }} {{ employee.step5 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment5 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service5 }}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from6 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to6 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title6 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c6 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary6 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade6 }} {{ employee.step6 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment6 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service6 }}
+		</td>
+	</tr>
+		<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from7 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to7 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title7 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c7 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary7 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade7 }} {{ employee.step7 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment7 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service7 }}
+		</td>
+	</tr>
+		<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from8 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to8 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title8 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c8 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary8 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade8 }} {{ employee.step8 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment8 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service8 }}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from9 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to9 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title9 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c9 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary9 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade9 }} {{ employee.step9 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment9 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service9 }}
+		</td>
+	</tr>	
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from10 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to10 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title10 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c10 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary10 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade10 }} {{ employee.step10 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment10 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service10 }}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from11 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to11 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title11 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c11 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary11 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade11 }} {{ employee.step11 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment11 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service11 }}
+		</td>
+	</tr>	
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from12 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to12 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title12 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c12 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary12 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade12 }} {{ employee.step12 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment12 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service12 }}
+		</td>
+	</tr>
+		<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from13 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to13 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title13 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c13 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary13 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade13 }} {{ employee.step13 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment13 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service13 }}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from14 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to14 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title14 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c14 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary14 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade14 }} {{ employee.step14 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment14 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service14 }}
+		</td>
+	</tr>	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from15 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to15 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title15 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c15 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary15 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade15 }} {{ employee.step15 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment15 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service15 }}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from16 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to16 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title16 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c16 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary16 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade16 }} {{ employee.step16 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment16 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service16 }}
+		</td>
+	</tr>	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from17 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to17 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title17 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c17 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary17 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade17 }} {{ employee.step17 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment17 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service17 }}
+		</td>
+	</tr>
+		<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from18 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to18 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title18 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c18 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary18 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade18 }} {{ employee.step18 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment18 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service18 }}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from19 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to19 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title19 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c19 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary19 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade19 }} {{ employee.step19 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment19 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service19 }}
+		</td>
+	</tr>	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from20 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to20 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title20 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c20 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary20 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade20 }} {{ employee.step20 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment20 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service20 }}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from21 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to21 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title21 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c21 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary21 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade21 }} {{ employee.step21 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment21 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service21 }}
+		</td>
+	</tr>	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from22 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to22 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title22 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c22 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary22 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade22 }} {{ employee.step22 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment22 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service22 }}
+		</td>
+	</tr>
+		<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from23 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to23 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title23 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c23 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary23 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade23 }} {{ employee.step23 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment23 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service23 }}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from24 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to24 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title24 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c24 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary24 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade24 }} {{ employee.step24 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment24 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service24 }}
+		</td>
+	</tr>	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from25 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to25 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title25 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c25 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary25 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade25 }} {{ employee.step25 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment25 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service25 }}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from26 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to26 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title26 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c26 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary26 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade26 }} {{ employee.step26 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment26 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service26 }}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from27 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to27 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title27 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c27 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary27 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade27 }} {{ employee.step27 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment27 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service27 }}
+		</td>
+	</tr>
+		<tr>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_from28 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.inclusive_dates_to28 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.position_title28 }}
+		</td>
+		<td colspan="4" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.d_a_o_c28 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.monthly_salary28 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.salary_paygrade28 }} {{ employee.step28 }}
+		</td>
+		<td colspan="2" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.status_of_appointment28 }}
+		</td>
+		<td colspan="1" style="height: 0.3in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.gov_service28 }}
+		</td>
+	</tr>
+	<tr>
+        <td colspan="18" style="height: 0.1in; font-size: 55%; background-color:lightgray; color:red; border: 1px solid black; text-align: center;">
+			<b><i>(Continue on separate sheet if necessary)</i></b>
+		</td>
+    </tr>
+	<tr>
+		<td colspan="4" style="height: 0.25in; font-size: 62.5%; background-color:lightgray; border: 1px solid black; text-align: center;">
+		<b><i>SIGNATURE<i></b>
+		</td>
+		<td colspan="7" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{% if employee.signature %} 
+			<div class="signature">
+				<img src="{{ employee.signature.url }}" style="height: auto; width:100px;">
+			</div>
+			{% endif %}
+		</td>
+		<td colspan="3" style="height: 0.25in; font-size: 62.5%; background-color:lightgray; border: 1px solid black; text-align: center;">
+		<b><i>DATE<i></b>
+		</td>
+		<td colspan="4" style="height: 0.25in; font-size: 62.5%; border: 1px solid black;">
+			{{ employee.e_date }}
+		</td>		
+    </tr>
+	<tr>
+		<td colspan="18" style="height: 0.1in; font-size: 50%; border: 1px solid white; text-align: right;">
+		<i>CS FORM 212 (Revised 2017), Page 2 of 4</i>
+		</td>
+	</tr>
+</table>
+</div>
+</html>
+{% endblock %}
